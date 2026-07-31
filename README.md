@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="bn">
 <head>
     <meta charset="UTF-8">
@@ -65,14 +66,14 @@
             
             <!-- ক্যাটাগরি ফিল্টার বাটন সেকশন -->
             <div class="flex flex-wrap gap-2 mb-8" id="category-buttons">
+                <button onclick="filterChannels('all')" class="cat-btn bg-emerald-600 text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all shadow-md">সবগুলো</button>
                 <button onclick="filterChannels('bangla')" class="cat-btn bg-gray-800 hover:bg-emerald-600/80 text-gray-300 hover:text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all border border-gray-700">Bangladeshi</button>
                 <button onclick="filterChannels('english')" class="cat-btn bg-gray-800 hover:bg-emerald-600/80 text-gray-300 hover:text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all border border-gray-700">English</button>
                 <button onclick="filterChannels('indian_bangla')" class="cat-btn bg-gray-800 hover:bg-emerald-600/80 text-gray-300 hover:text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all border border-gray-700">Indian Bangla</button>
+                <button onclick="filterChannels('drama')" class="cat-btn bg-gray-800 hover:bg-emerald-600/80 text-gray-300 hover:text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all border border-gray-700">Drama</button>
                 <button onclick="filterChannels('movies')" class="cat-btn bg-gray-800 hover:bg-emerald-600/80 text-gray-300 hover:text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all border border-gray-700">Movies</button>
                 <button onclick="filterChannels('music')" class="cat-btn bg-gray-800 hover:bg-emerald-600/80 text-gray-300 hover:text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all border border-gray-700">Music</button>
                 <button onclick="filterChannels('sports')" class="cat-btn bg-gray-800 hover:bg-emerald-600/80 text-gray-300 hover:text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all border border-gray-700">Sports</button>
-                <button onclick="filterChannels('all')" class="cat-btn bg-emerald-600 text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all shadow-md">সবগুলো</button>
-                
             </div>
 
             <!-- চ্যানেল গ্রিড -->
@@ -85,7 +86,6 @@
     </footer>
 
     <script>
-        // ক্যাটাগরি অনুযায়ী চ্যানেল অবজেক্টে category ফিল্ড যোগ করা হয়েছে
         const channels = [
             // ১ থেকে ৫: Bangladeshi
             {
@@ -186,67 +186,74 @@
                 logo: "https://cdn.ekatttorbd.com/contents/themes/public/style/images/logo.png"
             },
 
-            // Bangladeshi News & Entertainment
+            // Drama (ড্রামা চ্যানেল যোগ করার উদাহরণ)
             {
                 id: 14,
+                name: "Deepto Drama",
+                category: "drama",
+                streamUrl: "https://owrcovcrpy.gpcdn.net/bpk-tv/1711/output/1711-audio_113412_eng=113200-video=2202800.m3u8",
+                logo: "https://images.seeklogo.com/logo-png/51/1/deepto-tv-logo-png_seeklogo-513994.png"
+            },
+
+            // Bangladeshi News & Entertainment
+            {
+                id: 15,
                 name: "Channel 24 HD",
                 category: "bangla",
                 streamUrl: "https://owrcovcrpy.gpcdn.net/bpk-tv/1703/output/1703-audio_113332_eng=113200-video=2202800.m3u8",
                 logo: "https://images.seeklogo.com/logo-png/42/1/channel-24-logo-png_seeklogo-424910.png"
             },
             {
-                id: 15,
+                id: 16,
                 name: "NTV HD",
                 category: "bangla",
                 streamUrl: "https://owrcovcrpy.gpcdn.net/bpk-tv/1716/output/1716-audio_113462_eng=113200-video=2202800.m3u8",
                 logo: "https://images.seeklogo.com/logo-png/39/1/ntv-channel-logo-png_seeklogo-396286.png"
             },
             {
-                id: 16,
+                id: 17,
                 name: "Ekattor TV HD",
                 category: "bangla",
                 streamUrl: "https://owrcovcrpy.gpcdn.net/bpk-tv/1705/output/1705-audio_113352_eng=113200-video=2202800.m3u8",
                 logo: "https://cdn.ekattorbd.com/contents/themes/public/style/images/logo.png"
             },
             {
-                id: 17,
+                id: 18,
                 name: "BanglaVision HD",
                 category: "bangla",
                 streamUrl: "https://owrcovcrpy.gpcdn.net/bpk-tv/1715/output/1715-audio_113452_eng=113200-video=2202800.m3u8",
                 logo: "https://images.seeklogo.com/logo-png/51/1/bangla-vision-tv-channel-logo-png_seeklogo-513051.png"
             },
             {
-                id: 18,
+                id: 19,
                 name: "DBC News HD",
                 category: "bangla",
                 streamUrl: "https://owrcovcrpy.gpcdn.net/bpk-tv/1728/output/1728-audio_113582_eng=113200-video=3224800.m3u8",
                 logo: "https://images.seeklogo.com/logo-png/62/1/dbc-news-logo-png_seeklogo-626101.png"
             },
             {
-                id: 19,
+                id: 20,
                 name: "Channel S HD",
                 category: "bangla",
                 streamUrl: "https://stream.ottplus.bd/live/channel_s_hd_abr/live/channel_s_hd_720/chunks.m3u8",
                 logo: "https://static.wikia.nocookie.net/logopedia/images/9/9a/Channel_S_Bangladesh_Logo_2024.png/revision/latest?cb=20260509181517"
             },
             {
-                id: 20,
+                id: 21,
                 name: "Jamuna TV HD",
                 category: "bangla",
                 streamUrl: "https://owrcovcrpy.gpcdn.net/bpk-tv/1701/output/1701-audio_113312_eng=113200-video=2202800.m3u8",
                 logo: "https://assets-prod.services.toffeelive.com/w_480,q_75,f_webp/PiL635oBEef-9-uV2uCe/posters/36f380e0-6c71-4b27-a73b-2afb3ce7e982.png"
             },
-
-            // Indian Bangla / Movies (স্যাম্পল চ্যানেল ডাটা)
             {
-                id: 21,
+                id: 22,
                 name: "Toffee TV HD",
                 category: "movies",
                 streamUrl: "http://10.10.230.182:8080/ch5/index.m3u8",
                 logo: "https://toffeelive.com/images/logos/logo.svg"
             },
             {
-                id: 22,
+                id: 23,
                 name: "PTV HD",
                 category: "indian_bangla",
                 streamUrl: "http://10.10.230.182:8080/ch5/index.m3u8",
@@ -257,7 +264,7 @@
         const grid = document.getElementById('channel-grid');
         const player = videojs('pstu-player');
 
-        // চ্যানেল গ্রিড রেন্ডার ফাংশন
+        // চ্যানেল গ্রিড রেন্ডার করার ফাংশন
         function renderChannels(channelList) {
             grid.innerHTML = '';
             if (channelList.length === 0) {
@@ -277,18 +284,15 @@
             });
         }
 
-        // ক্যাটাগরি ফিল্টার ফাংশন
+        // ক্যাটাগরি ফিল্টার করার ফাংশন
         function filterChannels(category) {
-            // বাটনগুলোর অ্যাক্টিভ স্টাইল চেঞ্জ করা
             const buttons = document.querySelectorAll('.cat-btn');
             buttons.forEach(btn => {
                 btn.className = "cat-btn bg-gray-800 hover:bg-emerald-600/80 text-gray-300 hover:text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all border border-gray-700";
             });
 
-            // বর্তমান ক্লিক করা বাটনে অ্যাক্টিভ স্টাইল যোগ করা
             event.target.className = "cat-btn bg-emerald-600 text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all shadow-md";
 
-            // ডাটা ফিল্টার
             if (category === 'all') {
                 renderChannels(channels);
             } else {
@@ -305,26 +309,28 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
-        // ফুলস্ক্রিন এবং অটো-ল্যান্ডস্কেপ ফাংশন
+        // ফুলস্ক্রিন ও ল্যান্ডস্কেপ ওরিয়েন্টেশন
         function goFullscreenLandscape() {
             player.requestFullscreen();
 
             if (screen.orientation && screen.orientation.lock) {
                 screen.orientation.lock('landscape').catch(function(error) {
-                    console.log("ওরিয়েন্টেশন লক করতে সমস্যা হয়েছে:", error);
+                    console.log("ওরিয়েন্টেশন লক করা যায়নি:", error);
                 });
             }
         }
 
-        // ফুলস্ক্রিন লিসেনার
         player.on('fullscreenchange', function() {
             if (!player.isFullscreen() && screen.orientation && screen.orientation.unlock) {
                 screen.orientation.unlock();
             }
         });
-
-        // প্রথমবার সব চ্যানেল লোড করা
-        renderChannels(channels);
+                // ইনিশিয়াল লোড: ওয়েবসাইট ওপেন হলেই Bangladeshi চ্যানেলগুলো দেখাবে
+        filterChannels('bangla');
+        
+        // Bangladeshi বাটনটি একটিভ দেখানোর জন্য
+        document.querySelectorAll('.cat-btn')[1].className = "cat-btn bg-emerald-600 text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all shadow-md";
+        document.querySelectorAll('.cat-btn')[0].className = "cat-btn bg-gray-800 hover:bg-emerald-600/80 text-gray-300 hover:text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all border border-gray-700";
     </script>
 </body>
 </html>
