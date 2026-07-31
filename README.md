@@ -38,7 +38,8 @@
         </div>
     </header>
 
-    <section class="hero-bg py-12">
+    <!-- প্লেয়ার সেকশন -->
+    <section class="hero-bg py-8">
         <div class="container mx-auto px-6">
             <div class="max-w-4xl mx-auto">
                 <div class="bg-gray-900/60 p-4 rounded-2xl border border-gray-800 shadow-2xl">
@@ -59,21 +60,21 @@
         </div>
     </section>
 
-    <section class="py-12 bg-[#090d16]">
+    <!-- ক্যাটাগরি এবং চ্যানেল সেকশন -->
+    <section class="py-6 bg-[#090d16]">
         <div class="container mx-auto px-6">
             <h2 class="text-2xl font-bold mb-6 border-l-4 border-emerald-500 pl-4">সকল চ্যানেল লিস্ট</h2>
             
             <!-- ক্যাটাগরি ফিল্টার বাটন সেকশন -->
             <div class="flex flex-wrap gap-2 mb-8" id="category-buttons">
-                <button onclick="filterChannels('bangla')" class="cat-btn bg-gray-800 hover:bg-emerald-600/80 text-gray-300 hover:text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all border border-gray-700">Bangladeshi</button>
-                <button onclick="filterChannels('english')" class="cat-btn bg-gray-800 hover:bg-emerald-600/80 text-gray-300 hover:text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all border border-gray-700">English</button>
-                <button onclick="filterChannels('indian_bangla')" class="cat-btn bg-gray-800 hover:bg-emerald-600/80 text-gray-300 hover:text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all border border-gray-700">Indian Bangla</button>
-                <button onclick="filterChannels('drama')" class="cat-btn bg-gray-800 hover:bg-emerald-600/80 text-gray-300 hover:text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all border border-gray-700">Drama</button>
-                <button onclick="filterChannels('movies')" class="cat-btn bg-gray-800 hover:bg-emerald-600/80 text-gray-300 hover:text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all border border-gray-700">Movies</button>
-                <button onclick="filterChannels('music')" class="cat-btn bg-gray-800 hover:bg-emerald-600/80 text-gray-300 hover:text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all border border-gray-700">Music</button>
-                <button onclick="filterChannels('sports')" class="cat-btn bg-gray-800 hover:bg-emerald-600/80 text-gray-300 hover:text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all border border-gray-700">Sports</button>
-                <button onclick="filterChannels('all')" class="cat-btn bg-emerald-600 text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all shadow-md">সবগুলো</button>
-                
+                <button onclick="filterChannels('bangla', this)" class="cat-btn bg-emerald-600 text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all shadow-md">Bangladeshi</button>
+                <button onclick="filterChannels('all', this)" class="cat-btn bg-gray-800 hover:bg-emerald-600/80 text-gray-300 hover:text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all border border-gray-700">সবগুলো</button>
+                <button onclick="filterChannels('english', this)" class="cat-btn bg-gray-800 hover:bg-emerald-600/80 text-gray-300 hover:text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all border border-gray-700">English</button>
+                <button onclick="filterChannels('indian_bangla', this)" class="cat-btn bg-gray-800 hover:bg-emerald-600/80 text-gray-300 hover:text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all border border-gray-700">Indian Bangla</button>
+                <button onclick="filterChannels('drama', this)" class="cat-btn bg-gray-800 hover:bg-emerald-600/80 text-gray-300 hover:text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all border border-gray-700">Drama</button>
+                <button onclick="filterChannels('movies', this)" class="cat-btn bg-gray-800 hover:bg-emerald-600/80 text-gray-300 hover:text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all border border-gray-700">Movies</button>
+                <button onclick="filterChannels('music', this)" class="cat-btn bg-gray-800 hover:bg-emerald-600/80 text-gray-300 hover:text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all border border-gray-700">Music</button>
+                <button onclick="filterChannels('sports', this)" class="cat-btn bg-gray-800 hover:bg-emerald-600/80 text-gray-300 hover:text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all border border-gray-700">Sports</button>
             </div>
 
             <!-- চ্যানেল গ্রিড -->
@@ -87,7 +88,7 @@
 
     <script>
         const channels = [
-            // ১ থেকে ৫: Bangladeshi
+            // Bangladeshi
             {
                 id: 1,
                 name: "BTV",
@@ -123,79 +124,6 @@
                 streamUrl: "https://owrcovcrpy.gpcdn.net/bpk-tv/1704/output/1704-audio_113342_eng=113200-video=1692000.m3u8",
                 logo: "https://e7.pngegg.com/pngimages/969/124/png-clipart-logo-bangladesh-independent-television-television-channel-design-television-text-thumbnail.png"
             },
-            
-            // ৬ থেকে ১০: English
-            {
-                id: 6,
-                name: "Channel 1 HD",
-                category: "english",
-                streamUrl: "https://owrcovcrpy.gpcdn.net/bpk-tv/1702/output/1702-audio_113322_eng=113200-video=2202800.m3u8",
-                logo: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhD46az4QUFMgrdxbIN9e4EckzhxmEDtPIOGvWWqyA_5nWquqbZrpD6B11GRryRtWKOVTfjwHjqpX7DiKkik2Rwp0RQMMpfolhiuKKUr9TFdXV9C9hXKOnqyoLnsOVv2gUPdEp5d_O_Uwxx/s1600/channel-one.jpg"
-            },
-            {
-                id: 7,
-                name: "Channel 9 HD",
-                category: "english",
-                streamUrl: "https://owrcovcrpy.gpcdn.net/bpk-tv/1729/output/1729-audio_113592_eng=113200-video=2202800.m3u8",
-                logo: "https://images.seeklogo.com/logo-png/53/1/channel-9-logo-png_seeklogo-532421.png"
-            },
-            {
-                id: 8,
-                name: "Global TV HD",
-                category: "english",
-                streamUrl: "https://stream.ottplus.live/live/global_tv_abr/live/global_tv_hd_720/chunks.m3u8",
-                logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9WjStYXWaJplIhxNIKKroXnqu_polO2VBj0RUz1lhMA&s=10"
-            },
-            {
-                id: 9,
-                name: "Star News HD",
-                category: "english",
-                streamUrl: "https://owrcovcrpy.gpcdn.net/bpk-tv/1710/output/1710-audio_113402_eng=113200-video=3224800.m3u8",
-                logo: "https://starnews.com.bd/image/mob_logo.png"
-            },
-            {
-                id: 10,
-                name: "Test 2 TV HD",
-                category: "english",
-                streamUrl: "https://1nyaler.streamhostingcdn.top/stream/23/index.m3u8",
-                logo: "https://cdn.ekatttorbd.com/contents/themes/public/style/images/logo.png"
-            },
-
-            // Music
-            {
-                id: 11,
-                name: "Sangeet Bangla HD",
-                category: "music",
-                streamUrl: "https://cdn-4.pishow.tv/live/1143/master.m3u8",
-                logo: "https://www.medianews4u.com/wp-content/uploads/2021/08/Bengali-Music-channel-Sangeet-Bangla-rebranded-with-a-new-logo-and-fresh-packaging.jpg"
-            },
-
-            // Sports
-            {
-                id: 12,
-                name: "T Sports HD",
-                category: "sports",
-                streamUrl: "http://10.10.230.182:8080/ch2/index.m3u8",
-                logo: "https://images.seeklogo.com/logo-png/64/1/t-sports-logo-png_seeklogo-640172.png"
-            },
-            {
-                id: 13,
-                name: "beIN Sports 1 HD",
-                category: "sports",
-                streamUrl: "https://cp11.adabmedia.com/hls2/sport.m3u8",
-                logo: "https://cdn.ekatttorbd.com/contents/themes/public/style/images/logo.png"
-            },
-
-            // Drama (ড্রামা চ্যানেল যোগ করার উদাহরণ)
-            {
-                id: 14,
-                name: "Deepto Drama",
-                category: "drama",
-                streamUrl: "https://owrcovcrpy.gpcdn.net/bpk-tv/1711/output/1711-audio_113412_eng=113200-video=2202800.m3u8",
-                logo: "https://images.seeklogo.com/logo-png/51/1/deepto-tv-logo-png_seeklogo-513994.png"
-            },
-
-            // Bangladeshi News & Entertainment
             {
                 id: 15,
                 name: "Channel 24 HD",
@@ -233,18 +161,63 @@
             },
             {
                 id: 20,
-                name: "Channel S HD",
-                category: "bangla",
-                streamUrl: "https://stream.ottplus.bd/live/channel_s_hd_abr/live/channel_s_hd_720/chunks.m3u8",
-                logo: "https://static.wikia.nocookie.net/logopedia/images/9/9a/Channel_S_Bangladesh_Logo_2024.png/revision/latest?cb=20260509181517"
-            },
-            {
-                id: 21,
                 name: "Jamuna TV HD",
                 category: "bangla",
                 streamUrl: "https://owrcovcrpy.gpcdn.net/bpk-tv/1701/output/1701-audio_113312_eng=113200-video=2202800.m3u8",
                 logo: "https://assets-prod.services.toffeelive.com/w_480,q_75,f_webp/PiL635oBEef-9-uV2uCe/posters/36f380e0-6c71-4b27-a73b-2afb3ce7e982.png"
             },
+            
+            // English
+            {
+                id: 6,
+                name: "Channel 1 HD",
+                category: "english",
+                streamUrl: "https://owrcovcrpy.gpcdn.net/bpk-tv/1702/output/1702-audio_113322_eng=113200-video=2202800.m3u8",
+                logo: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhD46az4QUFMgrdxbIN9e4EckzhxmEDtPIOGvWWqyA_5nWquqbZrpD6B11GRryRtWKOVTfjwHjqpX7DiKkik2Rwp0RQMMpfolhiuKKUr9TFdXV9C9hXKOnqyoLnsOVv2gUPdEp5d_O_Uwxx/s1600/channel-one.jpg"
+            },
+            {
+                id: 7,
+                name: "Channel 9 HD",
+                category: "english",
+                streamUrl: "https://owrcovcrpy.gpcdn.net/bpk-tv/1729/output/1729-audio_113592_eng=113200-video=2202800.m3u8",
+                logo: "https://images.seeklogo.com/logo-png/53/1/channel-9-logo-png_seeklogo-532421.png"
+            },
+
+            // Music
+            {
+                id: 11,
+                name: "Sangeet Bangla HD",
+                category: "music",
+                streamUrl: "https://cdn-4.pishow.tv/live/1143/master.m3u8",
+                logo: "https://www.medianews4u.com/wp-content/uploads/2021/08/Bengali-Music-channel-Sangeet-Bangla-rebranded-with-a-new-logo-and-fresh-packaging.jpg"
+            },
+
+            // Sports
+            {
+                id: 12,
+                name: "T Sports HD",
+                category: "sports",
+                streamUrl: "http://10.10.230.182:8080/ch2/index.m3u8",
+                logo: "https://images.seeklogo.com/logo-png/64/1/t-sports-logo-png_seeklogo-640172.png"
+            },
+            {
+                id: 13,
+                name: "beIN Sports 1 HD",
+                category: "sports",
+                streamUrl: "https://cp11.adabmedia.com/hls2/sport.m3u8",
+                logo: "https://cdn.ekatttorbd.com/contents/themes/public/style/images/logo.png"
+            },
+
+            // Drama
+            {
+                id: 14,
+                name: "Deepto Drama",
+                category: "drama",
+                streamUrl: "https://owrcovcrpy.gpcdn.net/bpk-tv/1711/output/1711-audio_113412_eng=113200-video=2202800.m3u8",
+                logo: "https://images.seeklogo.com/logo-png/51/1/deepto-tv-logo-png_seeklogo-513994.png"
+            },
+
+            // Movies & Indian Bangla
             {
                 id: 22,
                 name: "Toffee TV HD",
@@ -285,13 +258,15 @@
         }
 
         // ক্যাটাগরি ফিল্টার করার ফাংশন
-        function filterChannels(category) {
+        function filterChannels(category, btnElement) {
             const buttons = document.querySelectorAll('.cat-btn');
             buttons.forEach(btn => {
                 btn.className = "cat-btn bg-gray-800 hover:bg-emerald-600/80 text-gray-300 hover:text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all border border-gray-700";
             });
 
-            event.target.className = "cat-btn bg-emerald-600 text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all shadow-md";
+            if (btnElement) {
+                btnElement.className = "cat-btn bg-emerald-600 text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all shadow-md";
+            }
 
             if (category === 'all') {
                 renderChannels(channels);
@@ -325,12 +300,12 @@
                 screen.orientation.unlock();
             }
         });
-                // ইনিশিয়াল লোড: ওয়েবসাইট ওপেন হলেই Bangladeshi চ্যানেলগুলো দেখাবে
-        filterChannels('bangla');
-        
-        // Bangladeshi বাটনটি একটিভ দেখানোর জন্য
-        document.querySelectorAll('.cat-btn')[1].className = "cat-btn bg-emerald-600 text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all shadow-md";
-        document.querySelectorAll('.cat-btn')[0].className = "cat-btn bg-gray-800 hover:bg-emerald-600/80 text-gray-300 hover:text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all border border-gray-700";
+
+        // পেজ লোড হওয়ার সাথে সাথেই Bangladeshi ফিল্টার সেট করার লজিক
+        document.addEventListener("DOMContentLoaded", function() {
+            const firstBtn = document.querySelector('.cat-btn');
+            filterChannels('bangla', firstBtn);
+        });
     </script>
 </body>
 </html>
