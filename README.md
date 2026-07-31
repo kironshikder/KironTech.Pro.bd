@@ -57,10 +57,23 @@
                     </div>
                 </div>
                 
-                <div class="mt-4 flex flex-col sm:flex-row justify-between items-center gap-4 px-2">
+                                <!-- ভিডিও প্লেয়ারের নিচে স্ক্রোলিং শিরোনাম -->
+                <div class="mt-4 bg-gray-900/90 border border-emerald-500/30 rounded-xl p-3 shadow-lg flex items-center gap-3">
+                    <span class="bg-emerald-600 text-white text-xs font-extrabold px-3 py-1.5 rounded-lg whitespace-nowrap shadow uppercase tracking-wider flex items-center gap-1">
+                        📢 আপডেট
+                    </span>
+                    <div class="overflow-hidden flex-1">
+                        <marquee behavior="scroll" direction="left" scrollamount="6" class="text-emerald-400 font-semibold text-sm sm:text-base flex items-center" onmouseover="this.stop();" onmouseout="this.start();">
+                            🎁 Kiron-Tech এ আপনাকে স্বাগতম! কোনো প্রকার সাবস্ক্রিপশন ছাড়াই সকল বাংলাদেশি ও আন্তর্জাতিক টিভি চ্যানেল উপভোগ করুন সম্পূর্ণ ফ্রি!
+                        </marquee>
+                    </div>
+                </div>
+
+                <!-- চ্যানেল টাইটেল এবং ফুলস্ক্রিন বাটন -->
+                <div class="mt-3 flex flex-col sm:flex-row justify-between items-center gap-3 px-2">
                     <h2 id="channel-title" class="text-xl font-bold text-emerald-400">বর্তমানে চলছে: BTV</h2>
-                    <button onclick="goFullscreenLandscape()" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2 px-5 rounded-lg flex items-center gap-2 transition-all shadow-lg">
-                        🔄 ফুলস্ক্রিন 
+                    <button onclick="goFullscreenLandscape()" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2 px-5 rounded-lg flex items-center gap-2 transition-all shadow-lg text-sm">
+                        🔄 ফুলস্ক্রিন
                     </button>
                 </div>
             </div>
