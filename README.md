@@ -30,6 +30,8 @@
     </style>
 </head>
 <body>
+    <script src="https://pl30626408.effectivecpmnetwork.com/eb/c7/c1/ebc7c10ff605d8068d5aa66639172e05.js"></script>
+
     <header class="sticky top-0 z-50 bg-[#0f172a]/90 backdrop-blur-md border-b border-gray-800">
         <div class="container mx-auto px-6 py-3 flex items-center justify-between gap-4">
             <!-- লোগো -->
