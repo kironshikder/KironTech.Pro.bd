@@ -102,6 +102,9 @@
             <div id="channel-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4"></div>
         </div>
     </section>
+    <script async="async" data-cfasync="false" src="https://pl30626303.effectivecpmnetwork.com/65ee02424b8b8124a9c62b6fce247047/invoke.js"></script>
+<div id="container-65ee02424b8b8124a9c62b6fce247047"></div>
+
 
     <footer class="py-8 text-center text-gray-600 border-t border-gray-800">
         <p>© 2026 Kiron. All Rights Reserved.</p>
