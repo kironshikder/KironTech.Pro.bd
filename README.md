@@ -220,15 +220,16 @@
             },
 
             // Movies & Indian Bangla
+            
+            { id: 22, name: "Sony MAX 2 HD", category: "movies", streamUrl: "https://stream.ottplus.bd/live/max_2_abr/live/max_2_720/chunks.m3u8", logo: "https://toffeelive.com/images/logos/logo.svg" },
+{ id: 23, name: "Sony SUB HD", category: "movies", streamUrl: "https://stream.ottplus.bd/live/sub_hd_abr/live/sony_sub_hd_720/chunks.m3u8", logo: "https://toffeelive.com/images/logos/logo.svg" },
+{ id: 24, name: "Sony MAX  HD", category: "movies", streamUrl: "https://stream.ottplus.bd/live/max_hd_abr/live/max_hd_720/chunks.m3u8", logo: "https://toffeelive.com/images/logos/logo.svg" },
+{ id: 25, name: "ZEE CINEMA HD", category: "movies", streamUrl: "https://stream.ottplus.bd/live/zee_cinema_hd_abr/live/zee_cinema_hd_720/chunks.m3u8", logo: "https://toffeelive.com/images/logos/logo.svg" },
+{ id: 26, name: "Sony PIX HD", category: "movies", streamUrl: "https://stream.ottplus.bd/live/pix_hd_abr/live/sony_pix_hd_720/chunks.m3u8", logo: "https://toffeelive.com/images/logos/logo.svg" },
+{ id: 27, name: "Sony Movies HD", category: "movies", streamUrl: "https://a-cdn.klowdtv.com/live1/smc_720p/chunks.m3u8", logo: "https://toffeelive.com/images/logos/logo.svg" },
+{ id: 28, name: "Movies NOW HD", category: "movies", streamUrl: "https://autumn-shape-b04a.soft-disk-1347.workers.dev/?url=http://ftpbdlive.com:8097/MOVIES-NOW/index.fmp4.m3u8?token=8291e6bc6d2a2935e204c1838f5730291810b4de-58cc706032206f29cde79dadc472229d-1775633452-1775629852", logo: "https://toffeelive.com/images/logos/logo.svg" },
             {
-                id: 22,
-                name: "Toffee TV HD",
-                category: "movies",
-                streamUrl: "http://10.10.230.182:8080/ch5/index.m3u8",
-                logo: "https://toffeelive.com/images/logos/logo.svg"
-            },
-            {
-                id: 23,
+                id: 29,
                 name: "PTV HD",
                 category: "indian_bangla",
                 streamUrl: "http://10.10.230.182:8080/ch5/index.m3u8",
