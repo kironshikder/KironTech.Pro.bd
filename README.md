@@ -95,7 +95,7 @@
                 id: 1,
                 name: "BTV",
                 category: "bangla",
-                streamUrl: "http://10.10.230.182:8080/ch3/index.m3u8",
+                streamUrl: "[https://streams.btvlive.gov.bd/live/37fd3e16-f4fd-4220-832a-d8b7e321fb9d/BD/355ba051-9a60-48aa-adcf-5a6c64da8c5c/index.m3u8]",
                 logo: "https://images.seeklogo.com/logo-png/45/1/btv-bangladesh-television-logo-png_seeklogo-459657.png"
             },
             {
@@ -109,7 +109,7 @@
                 id: 3,
                 name: "Somoy TV",
                 category: "bangla",
-                streamUrl: "http://10.10.230.182:8080/ch1/index.m3u8",
+                streamUrl: "https://owrcovcrpy.gpcdn.net/bpk-tv/1713/output/1713-audio_113432_eng=113200-video=2202800.m3u8",
                 logo: "https://images.seeklogo.com/logo-png/53/1/somoy-tv-logo-png_seeklogo-536972.png"
             },
             {
@@ -199,7 +199,7 @@
                 id: 12,
                 name: "T Sports HD",
                 category: "sports",
-                streamUrl: "http://10.10.230.182:8080/ch2/index.m3u8",
+                streamUrl: "https://s1.itcnbd.live/T-Sports-HD/tracks-v1a1/mono.m3u8",
                 logo: "https://images.seeklogo.com/logo-png/64/1/t-sports-logo-png_seeklogo-640172.png"
             },
             {
