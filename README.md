@@ -257,24 +257,31 @@
             });
         }
 
-        // ক্যাটাগরি ফিল্টার করার ফাংশন
-        function filterChannels(category, btnElement) {
-            const buttons = document.querySelectorAll('.cat-btn');
-            buttons.forEach(btn => {
-                btn.className = "cat-btn bg-gray-800 hover:bg-emerald-600/80 text-gray-300 hover:text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all border border-gray-700";
-            });
+        // ক্যাটাগরি ফিল্টার করার আপডেট ফাংশন
+function filterChannels(category, btnElement) {
+    const buttons = document.querySelectorAll('.cat-btn');
+    buttons.forEach(btn => {
+        btn.className = "cat-btn bg-gray-800 hover:bg-emerald-600/80 text-gray-300 hover:text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all border border-gray-700";
+    });
 
-            if (btnElement) {
-                btnElement.className = "cat-btn bg-emerald-600 text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all shadow-md";
-            }
+    if (btnElement) {
+        btnElement.className = "cat-btn bg-emerald-600 text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all shadow-md";
+    }
 
-            if (category === 'all') {
-                renderChannels(channels);
-            } else {
-                const filtered = channels.filter(ch => ch.category === category);
-                renderChannels(filtered);
+    if (category === 'all') {
+        renderChannels(channels);
+    } else {
+        // .includes() দিয়ে চেক করা হচ্ছে ক্যাটাগরিটি অ্যারেতে আছে কিনা
+        const filtered = channels.filter(ch => {
+            if (Array.isArray(ch.category)) {
+                return ch.category.includes(category);
             }
-        }
+            return ch.category === category;
+        });
+        renderChannels(filtered);
+    }
+}
+
 
         // প্লেয়ার ফাংশন
         function playStream(url, name) {
