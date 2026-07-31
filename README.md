@@ -171,14 +171,14 @@
             {
                 id: 6,
                 name: "Channel 1 HD",
-                category: "english",
+                category: "bangla",
                 streamUrl: "https://owrcovcrpy.gpcdn.net/bpk-tv/1702/output/1702-audio_113322_eng=113200-video=2202800.m3u8",
                 logo: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhD46az4QUFMgrdxbIN9e4EckzhxmEDtPIOGvWWqyA_5nWquqbZrpD6B11GRryRtWKOVTfjwHjqpX7DiKkik2Rwp0RQMMpfolhiuKKUr9TFdXV9C9hXKOnqyoLnsOVv2gUPdEp5d_O_Uwxx/s1600/channel-one.jpg"
             },
             {
                 id: 7,
                 name: "Channel 9 HD",
-                category: "english",
+                category: "bangla",
                 streamUrl: "https://owrcovcrpy.gpcdn.net/bpk-tv/1729/output/1729-audio_113592_eng=113200-video=2202800.m3u8",
                 logo: "https://images.seeklogo.com/logo-png/53/1/channel-9-logo-png_seeklogo-532421.png"
             },
