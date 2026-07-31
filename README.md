@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="bn">
 <head>
     <meta charset="UTF-8">
@@ -66,7 +65,6 @@
             
             <!-- ক্যাটাগরি ফিল্টার বাটন সেকশন -->
             <div class="flex flex-wrap gap-2 mb-8" id="category-buttons">
-                <button onclick="filterChannels('all')" class="cat-btn bg-emerald-600 text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all shadow-md">সবগুলো</button>
                 <button onclick="filterChannels('bangla')" class="cat-btn bg-gray-800 hover:bg-emerald-600/80 text-gray-300 hover:text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all border border-gray-700">Bangladeshi</button>
                 <button onclick="filterChannels('english')" class="cat-btn bg-gray-800 hover:bg-emerald-600/80 text-gray-300 hover:text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all border border-gray-700">English</button>
                 <button onclick="filterChannels('indian_bangla')" class="cat-btn bg-gray-800 hover:bg-emerald-600/80 text-gray-300 hover:text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all border border-gray-700">Indian Bangla</button>
@@ -74,6 +72,8 @@
                 <button onclick="filterChannels('movies')" class="cat-btn bg-gray-800 hover:bg-emerald-600/80 text-gray-300 hover:text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all border border-gray-700">Movies</button>
                 <button onclick="filterChannels('music')" class="cat-btn bg-gray-800 hover:bg-emerald-600/80 text-gray-300 hover:text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all border border-gray-700">Music</button>
                 <button onclick="filterChannels('sports')" class="cat-btn bg-gray-800 hover:bg-emerald-600/80 text-gray-300 hover:text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all border border-gray-700">Sports</button>
+                <button onclick="filterChannels('all')" class="cat-btn bg-emerald-600 text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all shadow-md">সবগুলো</button>
+                
             </div>
 
             <!-- চ্যানেল গ্রিড -->
