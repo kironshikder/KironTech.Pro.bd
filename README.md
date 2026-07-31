@@ -50,27 +50,12 @@
         <div class="container mx-auto px-6">
             <div class="max-w-4xl mx-auto">
                 <div class="bg-gray-900/60 p-4 rounded-2xl border border-gray-800 shadow-2xl">
-                    <div class="video-container relative">
-    <video id="pstu-player" class="video-js vjs-big-play-centered" controls preload="auto" data-setup='{}'>
-        <source src="https://owrcovcrpy.gpcdn.net/bpk-tv/1709/output/1709-audio_113392_eng=113200-video=2202800.m3u8" type="application/x-mpegURL">
-    </video>
-
-    <!-- ভিডিও প্লেয়ারের ভেতরের নিচের দিকে স্ক্রোলিং শিরোনাম -->
-    <div class="absolute bottom-10 left-0 w-full z-10 pointer-events-none px-3">
-        <div class="bg-black/70 backdrop-blur-sm border-t border-b border-emerald-500/50 py-1.5 px-3 rounded-lg flex items-center gap-2">
-            <span class="bg-emerald-600 text-white text-[10px] sm:text-xs font-bold px-2 py-0.5 rounded uppercase tracking-wide shrink-0">
-                LIVE
-            </span>
-            <div class="overflow-hidden flex-1">
-                <marquee behavior="scroll" direction="left" scrollamount="5" class="text-emerald-400 font-semibold text-xs sm:text-sm">
-                    🎁 Kiron-Tech — কোনো প্রকার সাবস্ক্রিপশন ছাড়াই সকল লাইভ টিভি চ্যানেল দেখুন সম্পূর্ণ ফ্রি!
-                </marquee>
-            </div>
-        </div>
-    </div>
-</div>
-
-                
+                    <div class="video-container">
+                        <video id="pstu-player" class="video-js vjs-big-play-centered" controls preload="auto" data-setup='{}'>
+                            <source src="https://owrcovcrpy.gpcdn.net/bpk-tv/1709/output/1709-audio_113392_eng=113200-video=2202800.m3u8" type="application/x-mpegURL">
+                        </video>
+                    </div>
+                </div>
                                 <!-- ভিডিও প্লেয়ারের নিচে স্ক্রোলিং শিরোনাম -->
                 <div class="mt-4 bg-gray-900/90 border border-emerald-500/30 rounded-xl p-3 shadow-lg flex items-center gap-3">
                     <span class="bg-emerald-600 text-white text-xs font-extrabold px-3 py-1.5 rounded-lg whitespace-nowrap shadow uppercase tracking-wider flex items-center gap-1">
