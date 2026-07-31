@@ -10,6 +10,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://vjs.zencdn.net/8.3.0/video-js.css" rel="stylesheet" />
     <script src="https://vjs.zencdn.net/8.3.0/video.min.js"></script>
+    <!-- Google IMA SDK & Video.js IMA Plugin -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-ads/6.6.5/videojs-contrib-ads.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/videojs-ima/1.11.0/videojs.ima.css" />
+
+<script src="https://imasdk.googleapis.com/js/sdk3/google_ima3.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-ads/6.6.5/videojs-contrib-ads.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-ima/1.11.0/videojs.ima.min.js"></script>
+
     <style>
         body { background-color: #0b0f19; color: #fff; }
         .hero-bg { background: linear-gradient(to bottom, rgba(11, 15, 25, 0.4), #0b0f19), url('https://lh3.googleusercontent.com/pw/AP1GczOPgX7ZV6vblOeWt99wR4Gvn-XvalwFXBNgZ2ad9i7VoecvA9Aw3hWbYqBos0tu8EBg1n5Iq-zAqx7Hd4f2fDg-_mbUfXsIxTsypY5r1e4CBq4drNHxL5hDPwIj58d0dtuA-VRoaq1yX_TS6jhqQ6MtHQ=w912-h608-s-no-gm?authuser=0') no-repeat center center/cover; }
@@ -306,6 +314,33 @@
 
         const grid = document.getElementById('channel-grid');
         const player = videojs('pstu-player');
+        // আপনার অ্যাড নেটওয়ার্ক (Adsterra/ExoClick/Google) থেকে পাওয়া VAST URL এখানে দিন
+const vastAdUrl = 'https://www.effectivecpmnetwork.com/qjrnkn02ij?key=4d4ccad4d26854db8cb8440a63cf041e'; // আপনার VAST Tag URL
+
+const imaOptions = {
+    id: 'pstu-player',
+    adTagUrl: vastAdUrl,
+    showCountdown: true,
+    autoPlayAdBreaks: true
+};
+
+// Player ready হওয়ার পর IMA প্লাগইন সেটআপ
+player.ima(imaOptions);
+
+// মোবাইল ব্রাউজারে ইউজার ক্লিক করলে অ্যাড প্লে হওয়ার নিয়ম (Autoplay policy handle করার জন্য)
+var contentPlayer = document.getElementById('pstu-player_html5_api');
+var startEvent = 'click';
+
+if (navigator.userAgent.match(/iPhone/i) ||
+    navigator.userAgent.match(/iPad/i) ||
+    navigator.userAgent.match(/Android/i)) {
+    startEvent = 'touchend';
+}
+
+player.one(startEvent, function() {
+    player.ima.initializeAdDisplayContainer();
+});
+
 
         // চ্যানেল গ্রিড রেন্ডার করার ফাংশন
         function renderChannels(channelList) {
