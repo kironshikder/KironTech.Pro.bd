@@ -37,7 +37,7 @@
             <!-- স্ক্রোলিং নিউজ/টাইটেল টেক্সট -->
             <div class="flex-1 overflow-hidden mx-4">
                 <marquee behavior="scroll" direction="left" scrollamount="5" class="text-emerald-400 font-bold text-sm sm:text-base tracking-wide flex items-center">
-                    🎁 Kiron-Tech এ আপনাকে স্বাগতম! এখানে সকল চ্যানেল দেখতে পারবেন সম্পূর্ণ ফ্রি! কোনো প্রকার চার্জ ছাড়াই উপভোগ করুন লাইভ স্ট্রিম! 🔥
+                    🎁 KironTech.Pro.bd তে আপনাকে স্বাগতম! এখানে সকল চ্যানেল দেখতে পারবেন সম্পূর্ণ ফ্রি! কোনো প্রকার চার্জ ছাড়াই উপভোগ করুন লাইভ স্ট্রিম! 🔥
                 </marquee>
             </div>
 
@@ -59,7 +59,7 @@
                                 <!-- ভিডিও প্লেয়ারের নিচে স্ক্রোলিং শিরোনাম -->
                 <div class="mt-4 bg-gray-900/90 border border-emerald-500/30 rounded-xl p-3 shadow-lg flex items-center gap-3">
                     <span class="bg-emerald-600 text-white text-xs font-extrabold px-3 py-1.5 rounded-lg whitespace-nowrap shadow uppercase tracking-wider flex items-center gap-1">
-                        📢 আপডেট
+                        📢 লাইভ আপডেট
                     </span>
                     <div class="overflow-hidden flex-1">
                         <marquee behavior="scroll" direction="left" scrollamount="6" class="text-emerald-400 font-semibold text-sm sm:text-base flex items-center" onmouseover="this.stop();" onmouseout="this.start();">
