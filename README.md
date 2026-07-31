@@ -95,7 +95,7 @@
                 id: 1,
                 name: "BTV",
                 category: "bangla",
-                streamUrl: "[https://streams.btvlive.gov.bd/live/37fd3e16-f4fd-4220-832a-d8b7e321fb9d/BD/355ba051-9a60-48aa-adcf-5a6c64da8c5c/index.m3u8]",
+                streamUrl: "https://streams.btvlive.gov.bd/live/37fd3e16-f4fd-4220-832a-d8b7e321fb9d/BD/355ba051-9a60-48aa-adcf-5a6c64da8c5c/index.m3u8",
                 logo: "https://images.seeklogo.com/logo-png/45/1/btv-bangladesh-television-logo-png_seeklogo-459657.png"
             },
             {
