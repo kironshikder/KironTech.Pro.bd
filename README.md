@@ -390,11 +390,19 @@ function filterChannels(category, btnElement) {
 
         // প্লেয়ার ফাংশন
         function playStream(url, name) {
-            player.src({ src: url, type: 'application/x-mpegURL' });
-            player.play();
-            document.getElementById('channel-title').innerText = "বর্তমানে চলছে: " + name;
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
+    player.src({ src: url, type: 'application/x-mpegURL' });
+    
+    // নতুন চ্যানেল চালু হলে VAST Ad রিকোয়েস্ট করা
+    if (player.ima && player.ima.requestAds) {
+        player.ima.requestAds();
+    }
+
+    player.play();
+    document.getElementById('channel-title').innerText = "বর্তমানে চলছে: " + name;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+        
 
         // ফুলস্ক্রিন ও ল্যান্ডস্কেপ ওরিয়েন্টেশন
         function goFullscreenLandscape() {
