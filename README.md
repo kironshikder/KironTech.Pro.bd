@@ -73,7 +73,9 @@
                 <button onclick="filterChannels('drama', this)" class="cat-btn bg-gray-800 hover:bg-emerald-600/80 text-gray-300 hover:text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all border border-gray-700">Drama</button>
                 <button onclick="filterChannels('movies', this)" class="cat-btn bg-gray-800 hover:bg-emerald-600/80 text-gray-300 hover:text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all border border-gray-700">Movies</button>
                 <button onclick="filterChannels('music', this)" class="cat-btn bg-gray-800 hover:bg-emerald-600/80 text-gray-300 hover:text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all border border-gray-700">Music</button>
-                <button onclick="filterChannels('sports', this)" class="cat-btn bg-gray-800 hover:bg-emerald-600/80 text-gray-300 hover:text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all border border-gray-700">Sports</button>
+                <button onclick="filterChannels('news', this)" class="cat-btn bg-gray-800 hover:bg-emerald-600/80 text-gray-300 hover:text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all border border-gray-700">News</button>
+
+               <button onclick="filterChannels('sports', this)" class="cat-btn bg-gray-800 hover:bg-emerald-600/80 text-gray-300 hover:text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all border border-gray-700">Sports</button>
                 <button onclick="filterChannels('all', this)" class="cat-btn bg-gray-800 hover:bg-emerald-600/80 text-gray-300 hover:text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all border border-gray-700">সবগুলো</button>
             </div>
 
@@ -127,7 +129,7 @@
             {
                 id: 15,
                 name: "Channel 24 HD",
-                category: "bangla",
+                category:  ["bangla", "news"],
                 streamUrl: "https://owrcovcrpy.gpcdn.net/bpk-tv/1703/output/1703-audio_113332_eng=113200-video=2202800.m3u8",
                 logo: "https://images.seeklogo.com/logo-png/42/1/channel-24-logo-png_seeklogo-424910.png"
             },
@@ -141,7 +143,7 @@
             {
                 id: 17,
                 name: "Ekattor TV HD",
-                category: "bangla",
+                category:  ["bangla", "news"],
                 streamUrl: "https://owrcovcrpy.gpcdn.net/bpk-tv/1705/output/1705-audio_113352_eng=113200-video=2202800.m3u8",
                 logo: "https://cdn.ekattorbd.com/contents/themes/public/style/images/logo.png"
             },
@@ -155,14 +157,14 @@
             {
                 id: 19,
                 name: "DBC News HD",
-                category: "bangla",
+                category:  ["bangla", "news"],
                 streamUrl: "https://owrcovcrpy.gpcdn.net/bpk-tv/1728/output/1728-audio_113582_eng=113200-video=3224800.m3u8",
                 logo: "https://images.seeklogo.com/logo-png/62/1/dbc-news-logo-png_seeklogo-626101.png"
             },
             {
                 id: 20,
                 name: "Jamuna TV HD",
-                category: "bangla",
+                category: ["bangla", "news"],
                 streamUrl: "https://owrcovcrpy.gpcdn.net/bpk-tv/1701/output/1701-audio_113312_eng=113200-video=2202800.m3u8",
                 logo: "https://assets-prod.services.toffeelive.com/w_480,q_75,f_webp/PiL635oBEef-9-uV2uCe/posters/36f380e0-6c71-4b27-a73b-2afb3ce7e982.png"
             },
