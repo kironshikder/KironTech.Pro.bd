@@ -316,7 +316,8 @@
         const grid = document.getElementById('channel-grid');
         const player = videojs('pstu-player');
         // আপনার অ্যাড নেটওয়ার্ক (Adsterra/ExoClick/Google) থেকে পাওয়া VAST URL এখানে দিন
-const vastAdUrl = 'https://www.effectivecpmnetwork.com/qjrnkn02ij?key=4d4ccad4d26854db8cb8440a63cf041e'; // আপনার VAST Tag URL
+const vastAdUrl = 'https://www.effectivecpmnetwork.com/qtk3u671?key=0925d26c98d46bfc9419bc79a2c21b76';
+// আপনার VAST Tag URL
 
 const imaOptions = {
     id: 'pstu-player',
