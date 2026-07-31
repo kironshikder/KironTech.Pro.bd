@@ -29,12 +29,19 @@
     </style>
 </head>
 <body>
-
     <header class="sticky top-0 z-50 bg-[#0f172a]/90 backdrop-blur-md border-b border-gray-800">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-black text-emerald-500">Kiron <span class="text-white">Tech</span></a>
+        <div class="container mx-auto px-6 py-3 flex items-center justify-between gap-4">
+            <!-- লোগো -->
+            <a href="#" class="text-2xl font-black text-emerald-500 whitespace-nowrap">Kiron <span class="text-white">Tech</span></a>
+            
+            <!-- স্ক্রোলিং নিউজ/টাইটেল টেক্সট -->
+            <div class="flex-1 overflow-hidden mx-4">
+                <marquee behavior="scroll" direction="left" scrollamount="5" class="text-emerald-400 font-bold text-sm sm:text-base tracking-wide flex items-center">
+                    🎁 Kiron-Tech এ আপনাকে স্বাগতম! এখানে সকল চ্যানেল দেখতে পারবেন সম্পূর্ণ ফ্রি! কোনো প্রকার চার্জ ছাড়াই উপভোগ করুন লাইভ স্ট্রিম! 🔥
+                </marquee>
+            </div>
+
             <amp-auto-ads type="adsense" data-ad-client="ca-pub-9664454297595711"></amp-auto-ads>
-            <span class="bg-emerald-600 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest">সম্পূর্ণ ফ্রি</span>
         </div>
     </header>
 
