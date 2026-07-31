@@ -68,13 +68,13 @@
             <!-- ক্যাটাগরি ফিল্টার বাটন সেকশন -->
             <div class="flex flex-wrap gap-2 mb-8" id="category-buttons">
                 <button onclick="filterChannels('bangla', this)" class="cat-btn bg-emerald-600 text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all shadow-md">Bangladeshi</button>
-                <button onclick="filterChannels('all', this)" class="cat-btn bg-gray-800 hover:bg-emerald-600/80 text-gray-300 hover:text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all border border-gray-700">সবগুলো</button>
                 <button onclick="filterChannels('english', this)" class="cat-btn bg-gray-800 hover:bg-emerald-600/80 text-gray-300 hover:text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all border border-gray-700">English</button>
                 <button onclick="filterChannels('indian_bangla', this)" class="cat-btn bg-gray-800 hover:bg-emerald-600/80 text-gray-300 hover:text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all border border-gray-700">Indian Bangla</button>
                 <button onclick="filterChannels('drama', this)" class="cat-btn bg-gray-800 hover:bg-emerald-600/80 text-gray-300 hover:text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all border border-gray-700">Drama</button>
                 <button onclick="filterChannels('movies', this)" class="cat-btn bg-gray-800 hover:bg-emerald-600/80 text-gray-300 hover:text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all border border-gray-700">Movies</button>
                 <button onclick="filterChannels('music', this)" class="cat-btn bg-gray-800 hover:bg-emerald-600/80 text-gray-300 hover:text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all border border-gray-700">Music</button>
                 <button onclick="filterChannels('sports', this)" class="cat-btn bg-gray-800 hover:bg-emerald-600/80 text-gray-300 hover:text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all border border-gray-700">Sports</button>
+                <button onclick="filterChannels('all', this)" class="cat-btn bg-gray-800 hover:bg-emerald-600/80 text-gray-300 hover:text-white font-semibold px-4 py-2 rounded-xl text-sm transition-all border border-gray-700">সবগুলো</button>
             </div>
 
             <!-- চ্যানেল গ্রিড -->
