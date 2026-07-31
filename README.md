@@ -1,5 +1,6 @@
 <html lang="bn">
 <head>
+    <meta name="monetag" content="dd6d361df9ae8f62348076ab4791c44f">
     <!-- <script src="https://pl30626309.effectivecpmnetwork.com/da/26/f8/da26f89b67e3183359dce17bb5af4c89.js"></script> -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
