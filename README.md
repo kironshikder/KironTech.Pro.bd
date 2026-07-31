@@ -223,7 +223,7 @@
             },
             {
                 id: 13,
-                name: "beIN Sports 1 HD",
+                name: "beIN Sports Xtra HD",
                 category: "sports",
                 streamUrl: "https://bein-esp-xumo.amagi.tv/playlistR1080p.m3u8",
                 logo: "https://cdn.ekatttorbd.com/contents/themes/public/style/images/logo.png"
