@@ -225,7 +225,7 @@
                 id: 13,
                 name: "beIN Sports 1 HD",
                 category: "sports",
-                streamUrl: "https://cp11.adabmedia.com/hls2/sport.m3u8",
+                streamUrl: "https://bein-esp-xumo.amagi.tv/playlistR1080p.m3u8",
                 logo: "https://cdn.ekatttorbd.com/contents/themes/public/style/images/logo.png"
             },
 
