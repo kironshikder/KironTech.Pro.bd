@@ -1,11 +1,5 @@
 <html lang="bn">
 <head>
-    self.options = {
-    "domain": "3nbf4.com",
-    "zoneId": 11472495
-}
-self.lary = ""
-importScripts('https://3nbf4.com/act/files/service-worker.min.js?r=sw')
     <meta name="monetag" content="dd6d361df9ae8f62348076ab4791c44f">
     <!-- <script src="https://pl30626309.effectivecpmnetwork.com/da/26/f8/da26f89b67e3183359dce17bb5af4c89.js"></script> -->
     <meta charset="UTF-8">
