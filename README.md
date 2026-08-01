@@ -1,5 +1,6 @@
 <html lang="bn">
 <head>
+    <script>(function(s){s.dataset.zone='11473441',s.src='https://nap5k.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
     <script>(function(s){s.dataset.zone='11473411',s.src='https://n6wxm.com/vignette.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
     <script src="https://quge5.com/88/tag.min.js" data-zone="265766" async data-cfasync="false"></script>
     <meta name="monetag" content="dd6d361df9ae8f62348076ab4791c44f">
