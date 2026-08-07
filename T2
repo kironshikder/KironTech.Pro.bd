@@ -2,25 +2,6 @@
 <!doctype html>
 <html lang="en-US" dir="ltr">
     <head>
-        <base href="https://xpedyhorizons.com/">
-        <link rel="preconnect" href="//www.gstatic.com">
-        <meta name="referrer" content="origin">
-        <meta name="viewport" content="initial-scale=1,minimum-scale=1,width=device-width,interactive-widget=resizes-content,viewport-fit=cover">
-        <meta name="color-scheme" content="only">
-        <meta name="google-site-verification" content="NDfDvTdbFxsd1TbRRZVQZULBTRT2-fatyuQ1TT8gack">
-        <meta name="twitter:card" content="summary_large_image">
-        <meta property="og:site_name" content="Gemini">
-        <link rel="icon" href="https://www.gstatic.com/lamda/images/gemini_sparkle_aurora_33f86dc0c0257da337c63.svg" sizes="any" type="image/svg+xml">
-        <link rel="icon" href="https://www.gstatic.com/lamda/images/gemini_sparkle_4g_512_lt_f94943af3be039176192d.png" sizes="any" type="image/png">
-        <link rel="apple-touch-icon" href="https://www.gstatic.com/lamda/images/gemini_sparkle_4g_512_lt_f94943af3be039176192d.png" sizes="any" type="image/png">
-        <link rel="preconnect" href="https://www.google.com">
-        <link rel="preconnect" href="https://lh3.googleusercontent.com">
-        <link rel="preconnect" href="https://waa-pa.clients6.google.com">
-        <link rel="preconnect" href="https://ogads-pa.clients6.google.com">
-        <link rel="preconnect" href="https://www.gstatic.com">
-        <link rel="preconnect" href="https://gemini.gstatic.com">
-        <link rel="preconnect" href="https://www.googletagmanager.com">
-        <link rel="preload" href="https://gemini.gstatic.com/_/mss/boq-bard-web/_/js/k=boq-bard-web.BardChatUi.en_US.TdZ0m8yKt8U.2018.O/am=FQCQ-Ahgf39Q7JAHBhLAxF4E0AMAAAAgBA/d=1/excm=_b/ed=1/dg=0/wt=2/ujg=1/rs=AL3bBk2-3gzvJWvBMnK9TkU6i7u1eOR6tw/ee=DGWCxb:CgYiQ;EmZ2Bf:zr1jrb;NJ1rfe:yGfSdd;Pjplud:PoEs9b;QGR0gd:Mlhmy;ScI3Yc:e7Hzgb;UYRIEb:HzTAQc;YIZmRd:A1yn5d;cEt90b:ws9Tlc;dIoSBb:SpsfSb;dowIGb:ebZ3mb;eBAeSb:zbML3c;iFQyKf:vfuNJf;oGtAuc:sOXFj;qQEoOc:KUM7Z;qddgKe:xQtZb;wNp4Gc:k56rsf;wR5FRb:siKnQd;yxTchf:KUM7Z/dti=1/m=_b?wli=BardChatUi.ElhTqNGQ59s.libheifWasm.O%3A%3B" as="script" nonce="Bk6WuoQA9GPscMMbliQBSw">
         <script data-id="_gd" nonce="Bk6WuoQA9GPscMMbliQBSw">
             window.WIZ_global_data = {
                 "AEJOSc": false,
